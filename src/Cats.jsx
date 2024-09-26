@@ -78,8 +78,7 @@ export default function Cats() {
 
                 <div className="cat-list">
                     {cats.map(cat => (
-                        <div className="cat-container">
-                            <img src={cat.url} style={{ margin: 10 }} />
+                        <div className="cat-container" style={{ backgroundImage: `url(${cat.url})` }}>
                         </div>
                     ))}
                 </div>
